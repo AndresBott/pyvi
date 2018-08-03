@@ -1,0 +1,12 @@
+# some fs settings and ide
+.idea
+.directory
+active
+archive
+tickets
+daycare-CLI.iml
+src/daycare.config.yaml
+
+
+# compiled python code
+*.pyc
