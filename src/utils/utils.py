@@ -4,6 +4,7 @@ import webbrowser
 import os
 
 
+
 class Utils:
     # class TerminalColors:
     #     HEADER = '\033[95m'
@@ -94,15 +95,24 @@ class Utils:
             try:
                 c = yaml.load(stream)
                 if default is not None:
-                    for item in default:
-                        if c.get(item) is not None:
-                            default[item] = c.get(item)
-                    return default
+                    return Utils.merge_objects(default,c)
+                    # for item in default:
+                    #     if c.get(item) is not None:
+                    #         default[item] = c.get(item)
+                    # return default
                 else:
                     return c
 
             except yaml.YAMLError as exc:
                 print(exc)
+
+    @staticmethod
+    def merge_objects(default,value):
+        for item in default:
+            if value.get(item) is not None:
+                default[item] = value.get(item)
+        return default
+
 
     @staticmethod
     def create_path(path):
