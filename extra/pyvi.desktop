@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=pyVi
+GenericName=Media Player
+Comment=Minimalistic Video player
+Exec=pyvi %f
+Icon=smplayer
+Terminal=false
+Type=Application
+Categories=Qt;KDE;AudioVideo;Player;Video;
+MimeType=application/ogg;application/x-ogg;audio/ogg;audio/x-vorbis;audio/x-vorbis+ogg;video/ogg;video/x-ogm+ogg;video/x-theora+ogg;video/x-theora;audio/x-speex;audio/opus;application/x-flac;audio/flac;audio/x-flac;audio/x-ms-asf;audio/x-ms-asx;audio/x-ms-wax;audio/x-ms-wma;video/x
+Keywords=movie;player;media;kde;qt;
