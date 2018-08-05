@@ -1,5 +1,6 @@
 # some fs settings and ide
 .idea
+*.iml
 .directory
 active
 archive
